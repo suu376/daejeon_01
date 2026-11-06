@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>02 같은 소스 맞음</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&amp;family=Noto+Sans+KR:wght@500;700;900&amp;family=Noto+Color+Emoji&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#FFD84A}a:hover{color:#fff}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; position: relative; overflow: hidden; background: #140F0E; font-family: 'Noto Sans KR', 'Noto Color Emoji', sans-serif; color: #140F0E">
+
+<img src="/_blob/6d7e6588b742f17f390d54a4ce885979" alt="화자오와 건고추 클로즈업" style="position: absolute; left: 0px; top: 0px; width: 1080px; height: 1350px; object-fit: cover; object-position: 62% 50%">
+
+<div style="position: absolute; left: 281px; top: 107px; background: #FFFFFF; border: 3px solid #140F0E; padding: 14px 36px; font-size: 44px; font-weight: 500; line-height: 1.4">마라탕이랑 마라샹궈 ...</div>
+<div style="position: absolute; left: 611px; top: 223px; background: #FFFFFF; border: 3px solid #140F0E; padding: 14px 80px 14px 44px; font-size: 44px; font-weight: 500; line-height: 1.4">얘네...</div>
+
+
+<img src="/_blob/78280e67682b492c92817e994754df50" alt="마라탕 누끼" style="position: absolute; left: 44px; top: 465px; width: 533px; transform: rotate(-8deg); filter: drop-shadow(0 10px 18px rgba(0,0,0,0.5)); height: 413px">
+<img src="/_blob/e231cd2ebe4988163a8442956420aa0a" alt="마라샹궈 누끼" style="position: absolute; right: 34px; top: 520px; width: 480px; transform: rotate(7deg); filter: drop-shadow(0 10px 18px rgba(0,0,0,0.5)); height: 371px">
+
+<span style="position: absolute; left: 70px; top: 420px; font-family: 'Gaegu', sans-serif; font-weight: 700; font-size: 60px; color: #FFFFFF; -webkit-text-stroke: 10px #140F0E; paint-order: stroke fill; transform: rotate(-8deg)">마라탕</span>
+<span style="position: absolute; right: 60px; top: 470px; font-family: 'Gaegu', sans-serif; font-weight: 700; font-size: 60px; color: #FFFFFF; -webkit-text-stroke: 10px #140F0E; paint-order: stroke fill; transform: rotate(7deg)">마라샹궈</span>
+
+<svg style="position: absolute; left: 520px; top: 450px; filter: drop-shadow(0 0 14px #FFFFFF)" width="70" height="70" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12.6 8 16 11.4 24 12C16 12.6 12.6 16 12 24C11.4 16 8 12.6 0 12C8 11.4 11.4 8 12 0Z" fill="#FFFFFF"></path></svg>
+<svg style="position: absolute; left: 90px; top: 850px; filter: drop-shadow(0 0 12px #FFFFFF)" width="50" height="50" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12.6 8 16 11.4 24 12C16 12.6 12.6 16 12 24C11.4 16 8 12.6 0 12C8 11.4 11.4 8 12 0Z" fill="#FFFFFF"></path></svg>
+<svg style="position: absolute; right: 90px; top: 880px; filter: drop-shadow(0 0 12px #FFFFFF)" width="44" height="44" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12.6 8 16 11.4 24 12C16 12.6 12.6 16 12 24C11.4 16 8 12.6 0 12C8 11.4 11.4 8 12 0Z" fill="#FFFFFF"></path></svg>
+
+<div style="position: absolute; left: 90px; bottom: 90px; width: 900px; box-sizing: border-box; background: #FFFFFF; border: 3px solid #140F0E; padding: 30px 36px; text-align: center; font-size: 42px; font-weight: 500; line-height: 61px">
+<p style="margin: 0; font-size: 34px">麻(저릴 마) + 辣(매울 랄) = 마라</p>
+<p style="margin: 0">화자오·고추·향신료 때려 넣은 소스</p>
+<p style="margin: 10px 0 0"><span style="background: linear-gradient(transparent 45%, rgb(255, 228, 92) 45%); padding: 0px 8px">둘 다 소스는 똑같음 ;;;;;</span></p>
+</div>
+
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"highlight":{"editor":"color","default":"#FFE45C","options":["#FFE45C","#FFD84A","#FFB800"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { highlight: this.props.highlight ?? '#FFE45C' };
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>마라탕 아카이브 · 게임 & 카드뉴스</title>
+<meta name="description" content="마라탕 게임과 카드뉴스를 한곳에서 바로 플레이하고 볼 수 있어요.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF6F1; --ink:#1C1412; --muted:#7A6A64; --line:#EADFD7;
+    --chili:#D7261E; --chili-deep:#A9150F; --gold:#FFC93C; --card:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* hero */
+  header{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+  header::after{content:"";position:absolute;inset:auto -10% -60% auto;width:620px;height:620px;border-radius:50%;
+    background:radial-gradient(circle at 40% 40%,rgba(215,38,30,.55),rgba(215,38,30,0) 65%);pointer-events:none}
+  .hero{padding-top:72px;padding-bottom:64px;position:relative;z-index:1}
+  .eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--gold);text-transform:uppercase}
+  .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--chili);display:inline-block}
+  h1{font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(44px,8vw,84px);line-height:1.02;margin:14px 0 16px;letter-spacing:-1px}
+  h1 em{font-style:normal;color:var(--chili)}
+  .lead{font-size:18px;color:#D9CCC6;max-width:520px;margin:0}
+  .jump{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
+  .pill{padding:11px 18px;border-radius:999px;font-weight:700;font-size:15px;border:1.5px solid rgba(255,255,255,.25);transition:.2s}
+  .pill:hover{border-color:#fff}
+  .pill.solid{background:var(--chili);border-color:var(--chili)}
+  .pill.solid:hover{background:var(--chili-deep);border-color:var(--chili-deep)}
+
+  /* sections */
+  section{padding:64px 0 8px}
+  .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:22px;border-bottom:1.5px solid var(--ink);padding-bottom:12px}
+  .sec-head h2{font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:34px;margin:0}
+  .sec-head span{color:var(--muted);font-size:14px}
+
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;
+    transition:transform .2s ease, box-shadow .2s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(60,20,10,.35)}
+  .thumb{aspect-ratio:16/10;display:grid;place-items:center;position:relative;overflow:hidden}
+  .thumb .emoji{font-size:84px;filter:drop-shadow(0 8px 16px rgba(0,0,0,.25));transition:transform .3s}
+  .card:hover .thumb .emoji{transform:scale(1.08) rotate(-4deg)}
+  .t-ninja{background:linear-gradient(135deg,#2A1A17,#5B1712)}
+  .t-wang{background:linear-gradient(135deg,#D7261E,#FF7A3D)}
+  .t-news{background:linear-gradient(135deg,#140F0E,#3B2A24)}
+  .t-news2{background:linear-gradient(135deg,#FFC93C,#FF8A3D)}
+  .tag{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.92);color:var(--ink);font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px}
+  .body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .body h3{margin:0;font-size:21px;font-weight:900;letter-spacing:-.3px}
+  .body p{margin:0;color:var(--muted);font-size:15px}
+  .actions{margin-top:auto;padding-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:12px;font-weight:700;font-size:14px;background:var(--ink);color:#fff;transition:.15s}
+  .btn:hover{background:var(--chili)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+  .btn.ghost:hover{border-color:var(--ink);background:transparent}
+  .note{font-size:13px;color:var(--muted);margin-top:4px}
+
+  footer{padding:56px 0 40px;color:var(--muted);font-size:13px;text-align:center}
+  footer a{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <span class="eyebrow"><i></i>MALATANG ARCHIVE</span>
+    <h1>마라탕, <em>맵게</em><br>즐겨보자</h1>
+    <p class="lead">마라탕 게임은 눌러서 바로 플레이하고, 카드뉴스는 바로 넘겨 볼 수 있어요.</p>
+    <div class="jump">
+      <a class="pill solid" href="#games">🎮 게임 하러 가기</a>
+      <a class="pill" href="#cardnews">📰 카드뉴스 보기</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="games">
+    <div class="sec-head"><h2>게임</h2><span>클릭하면 바로 실행돼요</span></div>
+    <div class="grid">
+
+      <div class="card">
+        <a href="왕푸아저씨네-마라탕/" class="thumb t-wang"><span class="tag">액션</span><span class="emoji">🍜</span></a>
+        <div class="body">
+          <h3>왕푸 아저씨네 마라탕</h3>
+          <p>왕푸 아저씨 가게에서 60초 동안 재료를 썰어 마라탕을 완성하고 코인을 모으세요.</p>
+          <div class="actions">
+            <a class="btn" href="왕푸아저씨네-마라탕/">▶ 플레이</a>
+            <a class="btn ghost" href="왕푸아저씨네-마라탕/랭킹판/">랭킹판</a>
+            <a class="btn ghost" href="왕푸아저씨네-마라탕/처음판/">처음판</a>
+          </div>
+          <p class="note">랭킹판의 순위는 이 페이지에서는 내 기기에만 저장돼요.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="cardnews">
+    <div class="sec-head"><h2>카드뉴스</h2><span>인스타 카드뉴스 5장 · 1080×1350</span></div>
+    <div class="grid">
+
+      <a class="card" href="https://claude.ai/artifact/S3ktGCmeDx2vsV2j32wb4S" target="_blank" rel="noopener">
+        <div class="thumb t-news"><span class="tag">카드뉴스 5장</span><span class="emoji">🌶️</span></div>
+        <div class="body">
+          <h3>마라샹궈 비SSAN 이유</h3>
+          <p>마라탕 vs 마라샹궈, 같은 소스인데 왜 가격이 다를까?</p>
+          <div class="actions"><span class="btn">카드뉴스 보기 ↗</span></div>
+        </div>
+      </a>
+
+      <a class="card" href="https://claude.ai/artifact/RUujkCBEobzBeBNHSJQGnE" target="_blank" rel="noopener">
+        <div class="thumb t-news2"><span class="tag">말풍선 없는 버전</span><span class="emoji">💸</span></div>
+        <div class="body">
+          <h3>마라샹궈 비SSAN 이유 (말풍선 없는 버전)</h3>
+          <p>표지 말풍선을 뺀 깔끔한 버전이에요.</p>
+          <div class="actions"><span class="btn">카드뉴스 보기 ↗</span></div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">카드뉴스는 Claude 디자인 페이지에서 열려요 · 원본 파일은 <a href="https://github.com/suu376/daejeon_01">GitHub 저장소</a>에 있어요</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Card2.dc.html": {
+      "h": 1350,
+      "title": "02 같은 소스 맞음",
+      "w": 1080,
+      "x": 1160,
+      "y": 0
+    },
+    "Card3.dc.html": {
+      "h": 1350,
+      "title": "03 끓이냐 볶냐",
+      "w": 1080,
+      "x": 2320,
+      "y": 0
+    },
+    "Card4.dc.html": {
+      "h": 1350,
+      "title": "04 그래서 맛이",
+      "w": 1080,
+      "x": 3480,
+      "y": 0
+    },
+    "Card5.dc.html": {
+      "h": 1350,
+      "title": "05 가격 + 투표",
+      "w": 1080,
+      "x": 4640,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "h": 1350,
+      "title": "01 표지",
+      "w": 1080,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-05T06:55:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "title": {
+      "kind": "title1",
+      "maxW": 5720,
+      "text": "마라탕 vs 마라샹궈 · 인스타 카드뉴스 5장 (1080×1350)",
+      "w": 240,
+      "x": 0,
+      "y": -320
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Card2.dc.html",
+    "Card3.dc.html",
+    "Card4.dc.html",
+    "Card5.dc.html"
+  ],
+  "pages": [],
+  "title": "마라탕 vs 마라샹궈 카드뉴스 (말풍선 없는 버전)"
+}

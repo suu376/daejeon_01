@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>01 표지 - 같은 소스인데 왜 다를까</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&amp;family=Gaegu:wght@700&amp;family=Noto+Sans+KR:wght@500;700;900&amp;family=Noto+Color+Emoji&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#FFD84A}a:hover{color:#fff}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; position: relative; overflow: hidden; background: #140F0E; font-family: 'Noto Sans KR', 'Noto Color Emoji', sans-serif; color: #FFFFFF">
+
+<img src="/_blob/59ff13fcb4b6b2b75e7c1b2c8757aea1" alt="마라탕과 마라샹궈를 나란히 놓은 상차림" style="position: absolute; left: -72px; top: -223px; width: 1174px; height: 1685px; object-fit: cover; object-position: 44.0715% 50%">
+
+
+
+
+<svg style="position: absolute; left: 157px; top: 791px; filter: drop-shadow(0 0 14px #FFFFFF); width: 67px; height: 86px" width="80" height="80" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12.6 8 16 11.4 24 12C16 12.6 12.6 16 12 24C11.4 16 8 12.6 0 12C8 11.4 11.4 8 12 0Z" fill="#FFFFFF"></path></svg>
+<svg style="position: absolute; right: 203px; top: 668px; filter: drop-shadow(0 0 12px #FFFFFF); width: 75px; height: 98px" width="60" height="60" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12.6 8 16 11.4 24 12C16 12.6 12.6 16 12 24C11.4 16 8 12.6 0 12C8 11.4 11.4 8 12 0Z" fill="#FFFFFF"></path></svg>
+
+<div style="position: absolute; left: 0; bottom: 70px; width: 1080px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; font-family: 'Black Han Sans', 'Noto Color Emoji', sans-serif; font-weight: 400; font-size: 96px; line-height: 1.2; letter-spacing: -2px; -webkit-text-stroke: 14px #140F0E; paint-order: stroke fill">
+<p style="margin: 0; color: #FFFFFF; width: 1051px; font-size: 130px; line-height: 1.15; position: relative">마라썅~궈<br>비SSAN 이유<span style="position: absolute; left: 118px; font-size: 96px; line-height: 1; transform: rotate(-14deg); top: 33px; font-family: &quot;Noto Sans KR&quot;, &quot;Noto Color Emoji&quot;, sans-serif; letter-spacing: normal; color: rgb(20, 15, 14)">💸</span><span style="position: absolute; left: 882px; top: 31px; font-family: 'Gaegu', sans-serif; font-weight: 700; font-size: 150px; line-height: 1; color: #39E36B; -webkit-text-stroke: 4px #FFFFFF; paint-order: stroke fill; transform: rotate(-12deg); letter-spacing: normal; text-align: start; width: 166px; height: 200px"><br></span></p>
+<p style="margin: 12px 0 0; color: #FFFFFF; font-size: 70px; line-height: 1.2"><span>이거</span> <font color="#ffe45c">안 궁금함?</font></p>
+</div>
+
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"highlight":{"editor":"color","default":"#FFE45C","options":["#FFE45C","#FFD84A","#FFB800"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { highlight: this.props.highlight ?? '#FFE45C' };
+}
+}
+</script>
+</body>
+</html>
